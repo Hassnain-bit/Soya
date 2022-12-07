@@ -5,7 +5,7 @@ function RadioButton(props) {
     <>
       <div className="flex items-center">
         <input
-          name="radio-button"
+          name={props.radioButtonFor}
           id={props.id}
           type="radio"
           value=""

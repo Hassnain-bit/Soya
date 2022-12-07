@@ -6,28 +6,25 @@ import arrow_icon from "../images/arrow_icon.svg";
 import RadioButton from "../components/RadioButton";
 import Label from "../components/Label";
 import Steps from "../components/StepsBox/Steps";
+import CounterWithHeading from "../components/CounterWithHeading";
+import NextButton from "../components/NextButton";
 
 function Evaluation1() {
   return (
     <>
-      <Title name={"Let’s get started"}/>
+      {/* TOP TITLE */}
+      <Title name={"Let’s get started"} />
 
       <div className="flex items-center justify-between">
         {/* LEFT QUESTIONS SECTION */}
         <div className="w-[38%]">
-          {/* COUNTER HEADING */}
-          <div className="flex items-center mb-[26px]">
-            <div className="flex w-[42px] h-[42px] rounded-full items-center justify-center bg-greenNormal">
-              <img src={numberOne} alt="numberOne-img" />
-            </div>
-            <h3 className="font-bold text-[32px] leading-[28px] ml-5">
-              Key Information
-            </h3>
-          </div>
+          {/* COUNTER - HEADING */}
+          <CounterWithHeading numberImg={numberOne} name={"Key Information"}/>
 
           <div className="mb-11 bg-[#00cf5f0a] border-l-[9px] border-greenNormal pt-[30px] px-8 pb-14">
             <form>
               <div className="space-y-4 mb-5">
+                {/* INPUT */}
                 <div className="max-w-[237px]">
                   <Label name={"Name"} />
                   <div className="mt-[11px] relative">
@@ -43,6 +40,7 @@ function Evaluation1() {
                   </div>
                 </div>
 
+                {/* INPUT */}
                 <div className="max-w-[237px]">
                   <Label name={"Surname"} />
                   <div className="mt-[11px] relative">
@@ -58,6 +56,7 @@ function Evaluation1() {
                   </div>
                 </div>
 
+                {/* INPUT */}
                 <div className="max-w-[237px]">
                   <Label name={"Age"} />
                   <div className="mt-[11px] relative">
@@ -74,22 +73,36 @@ function Evaluation1() {
                 </div>
               </div>
 
-              <div className="flex justify-between items-center mb-8">
-                <Label name={"Gender"} />
+              {/* GENDER */}
+              <div className="mb-8">
+                <div className="flex justify-between items-center">
+                  <Label name={"Gender"} />
 
-                <span className="text-[#4884FA] text-[12px] leading-[12px] cursor-pointer">
-                  Why do we need your gender?
-                </span>
-              </div>
+                  <span className="text-[#4884FA] text-[12px] leading-[12px] cursor-pointer">
+                    Why do we need your gender?
+                  </span>
+                </div>
 
-              <div className="flex items-center">
-                <RadioButton id={"Female"} htmlFor={"Female"} name={"Female"} />
+                <div className="flex items-center">
+                  <RadioButton
+                    radioButtonFor={"gender"}
+                    id={"Female"}
+                    htmlFor={"Female"}
+                    name={"Female"}
+                  />
 
-                <div className="ml-7">
-                  <RadioButton id={"Male"} htmlFor={"Male"} name={"Male"} />
+                  <div className="ml-7">
+                    <RadioButton
+                      radioButtonFor={"gender"}
+                      id={"Male"}
+                      htmlFor={"Male"}
+                      name={"Male"}
+                    />
+                  </div>
                 </div>
               </div>
 
+              {/* PRIVACY POLICY */}
               <div className="mt-7">
                 <Label name={"Privacy Policy"} />
 
@@ -113,14 +126,8 @@ function Evaluation1() {
             </form>
           </div>
 
-          <button className="ml-auto flex items-center">
-            <span className="mr-4 font-extrabold text-[32px] leading-[28px] text-blueLight">
-              Next
-            </span>{" "}
-            <span className="bg-blueDark flex items-center justify-center w-[60px] h-[60px] rounded-full">
-              <img src={arrow_icon} alt="arrow-img" />
-            </span>
-          </button>
+          {/* NEXT BUTTON */}
+          <NextButton goTo={"/evaluation2"}/>
         </div>
 
         {/* RIGHT STEPS */}
@@ -235,7 +242,13 @@ function Evaluation1() {
           </div>{" "}
         </div> */}
 
-        <Steps stepOneColor={"bg-greenNormal"} stepTwoColor={"bg-[#BDBCBC]"} stepThreeColor={"bg-[#BDBCBC]"} stepFourColor={"bg-[#BDBCBC]"} stepFiveColor={"bg-[#BDBCBC]"}/>
+        <Steps
+          stepOneColor={"bg-greenNormal"}
+          stepTwoColor={"bg-[#BDBCBC]"}
+          stepThreeColor={"bg-[#BDBCBC]"}
+          stepFourColor={"bg-[#BDBCBC]"}
+          stepFiveColor={"bg-[#BDBCBC]"}
+        />
       </div>
     </>
   );
