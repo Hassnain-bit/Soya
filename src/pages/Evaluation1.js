@@ -2,7 +2,6 @@ import React from "react";
 import Title from "../components/Title";
 import numberOne from "../images/numberOne.svg";
 import user_icon from "../images/user_icon.svg";
-import arrow_icon from "../images/arrow_icon.svg";
 import RadioButton from "../components/RadioButton";
 import Label from "../components/Label";
 import Steps from "../components/StepsBox/Steps";
@@ -15,9 +14,9 @@ function Evaluation1() {
       {/* TOP TITLE */}
       <Title name={"Let’s get started"} />
 
-      <div className="flex items-center justify-between">
+      <div className="flex justify-between">
         {/* LEFT QUESTIONS SECTION */}
-        <div className="w-[38%]">
+        <div className="w-[38%] pt-8">
           {/* COUNTER - HEADING */}
           <CounterWithHeading numberImg={numberOne} name={"Key Information"}/>
 

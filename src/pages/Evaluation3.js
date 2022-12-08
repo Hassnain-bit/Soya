@@ -1,6 +1,6 @@
 import React from "react";
 import Title from "../components/Title";
-import numberTwo from "../images/numberTwo.svg";
+import numberThree from "../images/numberThree.svg";
 import RadioButton from "../components/RadioButton";
 import Label from "../components/Label";
 import Steps from "../components/StepsBox/Steps";
@@ -8,28 +8,59 @@ import CounterWithHeading from "../components/CounterWithHeading";
 import BackButton from "../components/BackButton";
 import NextButton from "../components/NextButton";
 
-function Evaluation2() {
+function Evaluation3() {
   return (
     <>
       {/* TOP TITLE */}
-      <Title name={"Next step"} />
+      <Title name={"We are getting there"} />
 
       <div className="flex justify-between">
         {/* LEFT QUESTIONS SECTION */}
         <div className="w-[38%] pt-8">
           {/* COUNTER - HEADING */}
-          <CounterWithHeading numberImg={numberTwo} name={"Health Literacy"} />
+          <CounterWithHeading
+            numberImg={numberThree}
+            name={"Detailed Health Literacy"}
+          />
 
           <div className="mb-11 bg-[#00cf5f0a] border-l-[9px] border-greenNormal pt-[30px] px-8 pb-14">
             <form>
               <div className="space-y-4 mb-5">
                 {/* RADIO BUTTONS */}
                 <div>
-                  <Label name={"Have you had a previous Stroke?"} />
+                  <Label name={"How is your Attrial Fibrillation?"} />
+
+                  <div className="flex items-start flex-col mt-2">
+                    <RadioButton
+                      radioButtonFor={"attrialFibrillation"}
+                      id={"Irregular Heartbeat"}
+                      htmlFor={"Irregular Heartbeat"}
+                      name={"Irregular Heartbeat"}
+                    />
+
+                    <RadioButton
+                      radioButtonFor={"attrialFibrillation"}
+                      id={"I don't know"}
+                      htmlFor={"I don't know"}
+                      name={"I don't know"}
+                    />
+
+                    <RadioButton
+                      radioButtonFor={"attrialFibrillation"}
+                      id={"Regular Heartbeat"}
+                      htmlFor={"Regular Heartbeat"}
+                      name={"Regular Heartbeat"}
+                    />
+                  </div>
+                </div>
+
+                {/* RADIO BUTTONS */}
+                <div>
+                  <Label name={"Have you been diagnosed with Diabetes Mellitus?"} />
 
                   <div className="flex items-center mt-2">
                     <RadioButton
-                      radioButtonFor={"previousStroke"}
+                      radioButtonFor={"diabetesMellitus"}
                       id={"Yes"}
                       htmlFor={"Yes"}
                       name={"Yes"}
@@ -37,7 +68,7 @@ function Evaluation2() {
 
                     <div className="ml-7">
                       <RadioButton
-                        radioButtonFor={"previousStroke"}
+                        radioButtonFor={"diabetesMellitus"}
                         id={"No"}
                         htmlFor={"No"}
                         name={"No"}
@@ -48,11 +79,11 @@ function Evaluation2() {
 
                 {/* RADIO BUTTONS */}
                 <div>
-                  <Label name={"Do you have a family history of Stroke?"} />
+                  <Label name={"Is your stress level high?"} />
 
                   <div className="flex items-center mt-2">
                     <RadioButton
-                      radioButtonFor={"historyOfStroke"}
+                      radioButtonFor={"stressLevel"}
                       id={"Yes"}
                       htmlFor={"Yes"}
                       name={"Yes"}
@@ -60,7 +91,7 @@ function Evaluation2() {
 
                     <div className="ml-7">
                       <RadioButton
-                        radioButtonFor={"historyOfStroke"}
+                        radioButtonFor={"stressLevel"}
                         id={"No"}
                         htmlFor={"No"}
                         name={"No"}
@@ -71,11 +102,11 @@ function Evaluation2() {
 
                 {/* RADIO BUTTONS */}
                 <div>
-                  <Label name={"Do you have a heart disease?"} />
+                  <Label name={"Do you exercise regularly?"} />
 
                   <div className="flex items-center mt-2">
                     <RadioButton
-                      radioButtonFor={"heartDisease"}
+                      radioButtonFor={"exercise"}
                       id={"Yes"}
                       htmlFor={"Yes"}
                       name={"Yes"}
@@ -83,53 +114,7 @@ function Evaluation2() {
 
                     <div className="ml-7">
                       <RadioButton
-                        radioButtonFor={"heartDisease"}
-                        id={"No"}
-                        htmlFor={"No"}
-                        name={"No"}
-                      />
-                    </div>
-                  </div>
-                </div>
-
-                {/* RADIO BUTTONS */}
-                <div>
-                  <Label name={"Are you overweight?"} />
-
-                  <div className="flex items-center mt-2">
-                    <RadioButton
-                      radioButtonFor={"overweight"}
-                      id={"Yes"}
-                      htmlFor={"Yes"}
-                      name={"Yes"}
-                    />
-
-                    <div className="ml-7">
-                      <RadioButton
-                        radioButtonFor={"overweight"}
-                        id={"No"}
-                        htmlFor={"No"}
-                        name={"No"}
-                      />
-                    </div>
-                  </div>
-                </div>
-
-                {/* RADIO BUTTONS */}
-                <div>
-                  <Label name={"Do you smoke?"} />
-
-                  <div className="flex items-center mt-2">
-                    <RadioButton
-                      radioButtonFor={"smoke"}
-                      id={"Yes"}
-                      htmlFor={"Yes"}
-                      name={"Yes"}
-                    />
-
-                    <div className="ml-7">
-                      <RadioButton
-                        radioButtonFor={"smoke"}
+                        radioButtonFor={"exercise"}
                         id={"No"}
                         htmlFor={"No"}
                         name={"No"}
@@ -143,17 +128,17 @@ function Evaluation2() {
 
           <div className="flex justify-between items-center">
             {/* BACK BUTTON */}
-            <BackButton goTo={"/"}/>
+            <BackButton goTo={"/evaluation2"} />
 
             {/* NEXT BUTTON */}
-            <NextButton goTo={"/evaluation3"}/>
+            <NextButton goTo={"/evaluation4"} />
           </div>
         </div>
 
         <Steps
           stepOneColor={"bg-greenNormal"}
           stepTwoColor={"bg-greenNormal"}
-          stepThreeColor={"bg-[#BDBCBC]"}
+          stepThreeColor={"bg-greenNormal"}
           stepFourColor={"bg-[#BDBCBC]"}
           stepFiveColor={"bg-[#BDBCBC]"}
         />
@@ -162,4 +147,4 @@ function Evaluation2() {
   );
 }
 
-export default Evaluation2;
+export default Evaluation3;

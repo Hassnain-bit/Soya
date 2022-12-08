@@ -27,3 +27,35 @@ body {
   background-image: url("data:image/svg+xml,%3csvg viewBox=%270 0 16 16%27 fill=%27white%27 xmlns=%27http://www.w3.org/2000/svg%27%3e%3cpath d=%27M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z%27/%3e%3c/svg%3e") !important;
   background-color: #00000059 !important;
 }
+
+
+.radioCounter[type="radio"]{
+  opacity: 0;
+}
+
+.mylabel{
+  height: 180px;
+  width: 240px;
+  border: 6px solid #18f98d;
+  margin: auto;
+  border-radius: 10px;
+  position: relative;
+  color: #18f98d;
+  transition: 0.5s;
+}
+
+.mylabel>span {
+  font-size: 25px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 80%);
+}
+
+input[type="radio"]:checked + .mylabel {
+	background-color: #18f98d;
+	color: #ffffff;
+	box-shadow: 0 15px 45px rgb(24,249,141,0.2);
+}
