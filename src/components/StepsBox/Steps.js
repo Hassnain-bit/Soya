@@ -68,7 +68,7 @@ function Steps(props) {
           />
         </div>
         <div className="px-6">
-          <button className="py-1.5 w-full bg-[#D9D9D9] rounded-[10px] font-semibold text-[20px] text-white leading-[25px]">
+          <button className="py-1.5 w-full rounded-[10px] font-semibold text-[20px] text-white leading-[25px]" style={{background: props.buttonBgColor}}>
             Take me to my Dashboard
           </button>
         </div>{" "}

@@ -84,10 +84,12 @@ function Evaluation4() {
 
                 {/* RADIO BUTTONS */}
                 <div>
-                  <Label name={"Is your fasting Blood sugar greater than 100mg/dl?"} />
+                  <Label
+                    name={"Is your fasting Blood sugar greater than 100mg/dl?"}
+                  />
 
                   <div className="flex items-start flex-col mt-2">
-                  <RadioButton
+                    <RadioButton
                       radioButtonFor={"bloodSugar"}
                       id={"Yes, less than 100mg/dl"}
                       htmlFor={"Yes, less than 100mg/dl"}
@@ -115,12 +117,14 @@ function Evaluation4() {
           </div>
         </div>
 
+        {/* RIGHT STEPS */}
         <Steps
           stepOneColor={"bg-greenNormal"}
           stepTwoColor={"bg-greenNormal"}
           stepThreeColor={"bg-greenNormal"}
           stepFourColor={"bg-greenNormal"}
           stepFiveColor={"bg-[#BDBCBC]"}
+          buttonBgColor={"#D9D9D9"}
         />
       </div>
     </>

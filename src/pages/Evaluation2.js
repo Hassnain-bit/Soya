@@ -143,19 +143,21 @@ function Evaluation2() {
 
           <div className="flex justify-between items-center">
             {/* BACK BUTTON */}
-            <BackButton goTo={"/"}/>
+            <BackButton goTo={"/"} />
 
             {/* NEXT BUTTON */}
-            <NextButton goTo={"/evaluation3"}/>
+            <NextButton goTo={"/evaluation3"} />
           </div>
         </div>
 
+        {/* RIGHT STEPS */}
         <Steps
           stepOneColor={"bg-greenNormal"}
           stepTwoColor={"bg-greenNormal"}
           stepThreeColor={"bg-[#BDBCBC]"}
           stepFourColor={"bg-[#BDBCBC]"}
           stepFiveColor={"bg-[#BDBCBC]"}
+          buttonBgColor={"#D9D9D9"}
         />
       </div>
     </>

@@ -130,123 +130,14 @@ function Evaluation1() {
         </div>
 
         {/* RIGHT STEPS */}
-        {/* <div className="bg-[#16195e0a] rounded-[10px] w-[50%] pt-[33px] px-12 pb-11">
-          <div className="space-y-2.5 mb-32">
-           
-            <div className="flex items-start">
-              <div className="flex flex-col items-center">
-                <div className="flex items-center justify-center bg-greenNormal w-[42px] h-[42px] rounded-full">
-                  <img src={numberOne} alt="numberOne-img" />
-                </div>
-                <div className="mt-3">
-                  <img src={dashed_line} alt="dashed_line" />
-                </div>
-              </div>
-              <div className="ml-5 pt-1.5">
-                <h4 className="font-bold text-[16px] leading-[28px] text-black">
-                  Key Information
-                </h4>
-                <p className="font-bold text-[16px] leading-[28px] text-[#929292]">
-                  We are happy to get to know you better for your first Soya
-                  assessment.
-                </p>
-              </div>
-            </div>
-
-           
-            <div className="flex items-start">
-              <div className="flex flex-col items-center">
-                <div className="flex items-center justify-center bg-[#BDBCBC] w-[42px] h-[42px] rounded-full">
-                  <img src={numberTwo} alt="numberTwo-img" />
-                </div>
-                <div className="mt-3">
-                  <img src={dashed_line} alt="dashed_line" />
-                </div>
-              </div>
-              <div className="ml-5 pt-1.5">
-                <h4 className="font-bold text-[16px] leading-[28px] text-black">
-                  Health Literacy
-                </h4>
-                <p className="font-bold text-[16px] leading-[28px] text-[#929292]">
-                  Here we will start with some general questions. Then on the
-                  next steps, we will require more detailed measurements.
-                </p>
-              </div>
-            </div>
-
-           
-            <div className="flex items-start">
-              <div className="flex flex-col items-center">
-                <div className="flex items-center justify-center bg-[#BDBCBC] w-[42px] h-[42px] rounded-full">
-                  <img src={numberTwo} alt="numberTwo-img" />
-                </div>
-                <div className="mt-3">
-                  <img src={dashed_line} alt="dashed_line" />
-                </div>
-              </div>
-              <div className="ml-5 pt-1.5">
-                <h4 className="font-bold text-[16px] leading-[28px] text-black">
-                  Health Literacy
-                </h4>
-                <p className="font-bold text-[16px] leading-[28px] text-[#929292]">
-                  Here we will start with some general questions. Then on the
-                  next steps, we will require more detailed measurements.
-                </p>
-              </div>
-            </div>
-
-           
-            <div className="flex items-start">
-              <div className="flex flex-col items-center">
-                <div className="flex items-center justify-center bg-[#BDBCBC] w-[42px] h-[42px] rounded-full">
-                  <img src={numberTwo} alt="numberTwo-img" />
-                </div>
-                <div className="mt-3">
-                  <img src={dashed_line} alt="dashed_line" />
-                </div>
-              </div>
-              <div className="ml-5 pt-1.5">
-                <h4 className="font-bold text-[16px] leading-[28px] text-black">
-                  Health Literacy
-                </h4>
-                <p className="font-bold text-[16px] leading-[28px] text-[#929292]">
-                  Here we will start with some general questions. Then on the
-                  next steps, we will require more detailed measurements.
-                </p>
-              </div>
-            </div>
-
-           
-            <div className="flex items-start">
-              <div className="flex flex-col items-center">
-                <div className="flex items-center justify-center bg-[#BDBCBC] w-[42px] h-[42px] rounded-full">
-                  <img src={numberTwo} alt="numberTwo-img" />
-                </div>
-              </div>
-              <div className="ml-5 pt-1.5">
-                <h4 className="font-bold text-[16px] leading-[28px] text-black">
-                  Health Literacy
-                </h4>
-                <p className="font-bold text-[16px] leading-[28px] text-[#929292]">
-                  Here we will start with some general questions. Then on the
-                  next steps, we will require more detailed measurements.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="px-6">
-            <button className="py-1.5 w-full bg-[#D9D9D9] rounded-[10px] font-semibold text-[20px] text-white leading-[25px]">
-              Take me to my Dashboard
-            </button>
-          </div>{" "}
-        </div> */}
-
         <Steps
           stepOneColor={"bg-greenNormal"}
           stepTwoColor={"bg-[#BDBCBC]"}
           stepThreeColor={"bg-[#BDBCBC]"}
           stepFourColor={"bg-[#BDBCBC]"}
           stepFiveColor={"bg-[#BDBCBC]"}
+
+          buttonBgColor={"#D9D9D9"}
         />
       </div>
     </>

@@ -56,7 +56,9 @@ function Evaluation3() {
 
                 {/* RADIO BUTTONS */}
                 <div>
-                  <Label name={"Have you been diagnosed with Diabetes Mellitus?"} />
+                  <Label
+                    name={"Have you been diagnosed with Diabetes Mellitus?"}
+                  />
 
                   <div className="flex items-center mt-2">
                     <RadioButton
@@ -135,12 +137,15 @@ function Evaluation3() {
           </div>
         </div>
 
+        
+        {/* RIGHT STEPS */}
         <Steps
           stepOneColor={"bg-greenNormal"}
           stepTwoColor={"bg-greenNormal"}
           stepThreeColor={"bg-greenNormal"}
           stepFourColor={"bg-[#BDBCBC]"}
           stepFiveColor={"bg-[#BDBCBC]"}
+          buttonBgColor={"#D9D9D9"}
         />
       </div>
     </>

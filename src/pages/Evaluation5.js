@@ -7,6 +7,7 @@ import Steps from "../components/StepsBox/Steps";
 import CounterWithHeading from "../components/CounterWithHeading";
 import BackButton from "../components/BackButton";
 import NextButton from "../components/NextButton";
+import CounterRadioButton from "../components/CounterRadioButton";
 
 function Evaluation5() {
   return (
@@ -67,19 +68,41 @@ function Evaluation5() {
                 <div>
                   <Label name={"How is your stress level on 1-5 scale?"} />
 
-                  <div className="flex items-start mt-2">
-                    <div>
-                    <input className="radioCounter" type="radio" name="payment" id="card" />
-                    <label className="mylabel" for="card">
-                      <span>1</span>
-                    </label>
-                    </div>
-                   <div>
-                   <input className="radioCounter" type="radio" name="payment" id="cash" />
-                    <label className="mylabel" for="cash">
-                      <span>2</span>
-                    </label>
-                   </div>
+                  <div className="flex items-start mt-2 space-x-1">
+                    <CounterRadioButton
+                      radioButtonFor={"stressLevel"}
+                      id={"1"}
+                      htmlFor={"1"}
+                      number={"1"}
+                    />
+
+                    <CounterRadioButton
+                      radioButtonFor={"stressLevel"}
+                      id={"2"}
+                      htmlFor={"2"}
+                      number={"2"}
+                    />
+
+                    <CounterRadioButton
+                      radioButtonFor={"stressLevel"}
+                      id={"3"}
+                      htmlFor={"3"}
+                      number={"3"}
+                    />
+
+                    <CounterRadioButton
+                      radioButtonFor={"stressLevel"}
+                      id={"4"}
+                      htmlFor={"4"}
+                      number={"4"}
+                    />
+
+                    <CounterRadioButton
+                      radioButtonFor={"stressLevel"}
+                      id={"5"}
+                      htmlFor={"5"}
+                      number={"5"}
+                    />
                   </div>
                 </div>
 
@@ -87,19 +110,45 @@ function Evaluation5() {
                 <div>
                   <Label name={"How is your work-life balance on 1-5 scale?"} />
 
-                  <div className="flex items-start flex-col mt-2">
-                    <RadioButton
-                      radioButtonFor={"bloodSugar"}
-                      id={"Yes, less than 100mg/dl"}
-                      htmlFor={"Yes, less than 100mg/dl"}
-                      name={"Yes, less than 100mg/dl"}
+                  <div className="flex items-start mt-2 space-x-1">
+                    {/* COUNTER RADIO BUTTON */}
+                    <CounterRadioButton
+                      radioButtonFor={"workLife"}
+                      id={"1"}
+                      htmlFor={"1"}
+                      number={"1"}
                     />
 
-                    <RadioButton
-                      radioButtonFor={"bloodSugar"}
-                      id={"No, more than 100mg/dl"}
-                      htmlFor={"No, more than 100mg/dl"}
-                      name={"No, more than 100mg/dl"}
+                    {/* COUNTER RADIO BUTTON */}
+                    <CounterRadioButton
+                      radioButtonFor={"workLife"}
+                      id={"2"}
+                      htmlFor={"2"}
+                      number={"2"}
+                    />
+
+                    {/* COUNTER RADIO BUTTON */}
+                    <CounterRadioButton
+                      radioButtonFor={"workLife"}
+                      id={"3"}
+                      htmlFor={"3"}
+                      number={"3"}
+                    />
+
+                    {/* COUNTER RADIO BUTTON */}
+                    <CounterRadioButton
+                      radioButtonFor={"workLife"}
+                      id={"4"}
+                      htmlFor={"4"}
+                      number={"4"}
+                    />
+
+                    {/* COUNTER RADIO BUTTON */}
+                    <CounterRadioButton
+                      radioButtonFor={"workLife"}
+                      id={"5"}
+                      htmlFor={"5"}
+                      number={"5"}
                     />
                   </div>
                 </div>
@@ -109,19 +158,21 @@ function Evaluation5() {
 
           <div className="flex justify-between items-center">
             {/* BACK BUTTON */}
-            <BackButton goTo={"/evaluation3"} />
+            <BackButton goTo={"/evaluation4"} />
 
             {/* NEXT BUTTON */}
-            <NextButton goTo={"/evaluation5"} />
+            <NextButton goTo={""} />
           </div>
         </div>
 
+        {/* RIGHT STEPS */}
         <Steps
           stepOneColor={"bg-greenNormal"}
           stepTwoColor={"bg-greenNormal"}
           stepThreeColor={"bg-greenNormal"}
           stepFourColor={"bg-greenNormal"}
-          stepFiveColor={"bg-[#BDBCBC]"}
+          stepFiveColor={"bg-greenNormal"}
+          buttonBgColor={"#00CF5F"}
         />
       </div>
     </>
